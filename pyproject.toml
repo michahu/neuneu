@@ -1,0 +1,44 @@
+[project]
+name = "simple-perplexity"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=4.0.0",
+    "ipykernel>=6.30.1",
+    "numpy>=2.3.2",
+    "pandas>=2.3.2",
+    "polars>=1.33.1",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+    "tables>=3.10.2",
+    "transformers<4.40",
+    "wandb>=0.23.1",
+    "torch>=2.9.1",
+    "torchvision>=0.24.1",
+    "einops>=0.8.1",
+    "accelerate>=0.26.0,<1.0.0",
+    "ai2-olmo>=0.2.2",
+    "fire>=0.7.1",
+]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
+  { index = "pytorch-cu130", marker = "sys_platform == 'linux'" },
+]
+torchvision = [
+  { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
+  { index = "pytorch-cu130", marker = "sys_platform == 'linux'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
