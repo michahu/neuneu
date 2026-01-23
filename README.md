@@ -62,7 +62,7 @@ The `neural` command evaluates models with CNN/soft-prompt encoders. Other evalu
 - `logistic` - Zero-shot logistic baseline
 
 Options:
-- `--context_ratio 0.5` - Fraction of checkpoints used as context (default: 0.5)
+- `--context_ratio 0.2` - Fraction of checkpoints used as context
 - `--prediction_mode sequential` - Use `sequential` (sliding window) or `anchored` (fixed context)
 
 ### Visualizing Results
