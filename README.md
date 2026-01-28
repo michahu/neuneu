@@ -1,6 +1,6 @@
 # Neural Neural Scaling Laws (NeuNeu)
 
-Predicting language model downstream task performance via learning curve extrapolation.
+Predicting language model downstream task performance via learning curve extrapolation.  
 [arXiv](https://arxiv.org/abs/2601.19831)
 
 ## Architecture
