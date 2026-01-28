@@ -3,6 +3,11 @@
 Predicting language model downstream task performance via learning curve extrapolation.  
 [arXiv](https://arxiv.org/abs/2601.19831)
 
+<p align="center">
+  <img src="figures/conceptual.png" width="64%" />
+  <img src="figures/hellaswag_neuneu_vs_logistic_750m.png" width="34%" />
+</p>
+
 ## Architecture
 
 ```
